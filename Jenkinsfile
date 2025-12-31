@@ -52,7 +52,7 @@ pipeline {
                 sh 'phploc app/ --log-csv build/logs/phploc.csv'
             }
         }
-    }
 
-  }
-}
+    } // end of stages
+} // end of pipeline
+
