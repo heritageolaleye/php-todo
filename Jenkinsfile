@@ -52,7 +52,6 @@ pipeline {
                 sh 'phploc app/ --log-csv build/logs/phploc.csv'
             }
         }
->>>>>>> f9dd4f0 (update)
     }
 
   }
