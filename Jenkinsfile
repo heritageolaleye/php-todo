@@ -9,13 +9,6 @@ pipeline {
             }
         }
 
-        stage('Initial cleanup') {
-            steps {
-                // Optional: delete everything except .env.sample
-                sh 'find . ! -name ".env.sample" -delete'
-            }
-        }
-
         stage('Prepare Dependencies') {
             steps {
                 sh 'cp .env.sample .env'
